@@ -51,7 +51,7 @@
 
 ## 概念
 
-* 超文本标记语言![avatar](\img\html概述.png)
+* 超文本标记语言![avatar](.\img\html概述.png)
 
 ## 快速入门
 
@@ -282,7 +282,7 @@
 
 
 
-## ![avatar](\img\css概述.png)
+## ![avatar](.\img\css概述.png)
 
 
 
