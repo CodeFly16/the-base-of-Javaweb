@@ -27,17 +27,15 @@
   演示：
   <!DOCTYPE html>
   <html lang="zh-CN">
-  ```
-<head>
+  <head>
       <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
       <title>Bootstrap 101 Template</title>
-
       <!-- Bootstrap -->
       <link href="css/bootstrap.min.css" rel="stylesheet">
-      
+  
       <!--&lt;!&ndash; HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 &ndash;&gt;-->
       <!--&lt;!&ndash; 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 &ndash;&gt;-->
       <!--&lt;!&ndash;[if lt IE 9]>-->
@@ -47,48 +45,52 @@
   </head>
   <body>
   <h1>你好，世界！</h1>
-
+  
+  
   <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
   <script src="js/jquery-1.11.3.min.js"></script><!-- 后期内容-->
+  
   <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
   <script src="js/bootstrap.min.js"></script>
+  
   </body>
   </html>
   ```
-  
   - 引入远程服务器的css和JavaScript文件`<link>和<script>`标签引入
   
   ```html
-  演示：
-  <!DOCTYPE html>
-  <html lang="zh-CN">
-  <head>
-      <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
-      <title>Bootstrap 101 Template</title>
-  
-      <!-- Bootstrap -->
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
-  
-      <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
-      <!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
-      <!--[if lt IE 9]>
-        <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
-      <![endif]-->
-    </head>
-    <body>
-      <h1>你好，世界！</h1>
-  
-      <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
-      <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
-      <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
-    </body>
-  </html>
+   演示：
+    <!DOCTYPE html>
+    <html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+        <title>Bootstrap 101 Template</title>
+    
+        <!-- Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+        <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
+        <!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
+        <!--[if lt IE 9]>
+          <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+          <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+        <![endif]-->
+      </head>
+      <body>
+        <h1>你好，世界！</h1>
+    
+        <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+        <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+        <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+      </body>
+    </html>
   ```
+  
+  
 
   
 
@@ -109,7 +111,7 @@
 
   ![栅格系统](/img/栅格系统.png)
 
-  ```
+  ```html
   演示：
   <!DOCTYPE html>
   <html lang="zh-CN">
@@ -156,7 +158,7 @@
 
 - 按钮 class="btn btn-xxxxxxx"
 
-  ```
+  ```html
   演示:
   <!--透明按钮-->
   <button type="button" class="btn btn-default">（默认样式）Default</button>
@@ -181,7 +183,7 @@
   - 实现图片的响应式:class="img-responsive"
   - 设置图片圆角，方角，相框等等
 
-  ```
+  ```html
   演示
   <img src="img/1.png" class="img-responsive img-circle">//圆角
   <img src="img/1.png" class="img-responsive img-thumbnail">//方角
@@ -192,7 +194,7 @@
 
 - 表格
 
-  ```
+  ```html
   演示:
   <table class="table table-bordered table-hover">//添加表格边框，鼠标悬停变色
       <tr>
@@ -212,7 +214,7 @@
 
   - 给表单项添加class=“form-XXXXX”
 
-  ```
+  ```html
   演示：
   <form class="form-inline">
     <div class="form-group">
@@ -240,7 +242,7 @@
 
   - 用于数据库，对数据库中数据进行分页显示
 
-  ```
+  ```html
   演示:
   <nav aria-label="Page navigation">
     <ul class="pagination">
@@ -267,7 +269,7 @@
 
 - 轮播图(Carousel 旋转木马)
 
-  ```
+  ```html
   演示
   <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
@@ -321,7 +323,7 @@
     - 导航栏：直接从bootstrap中提取，以栅格系统为主，根据自己要求修改
     - 轮播图：直接从bootstrap中提取，在根据自己要求修改
   - 主题部分：有留白  class="container"
-    - 多个栅格系统合并
+    - 多个栅格合并
   - 页脚部分：无留白  class="container-fluid"
 
 
