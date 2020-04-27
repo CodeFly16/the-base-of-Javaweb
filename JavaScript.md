@@ -329,7 +329,7 @@
      * var arr = new Array(数字);// 代表数组默认长度，也可以不写，代表一个空数组
      * var arr = [ 元素，元素，元素····]；
 
-     ```
+     ```javascript
      首先写出3种创建方式，然后结合代码，演示这3种创建方式
      var arr1 = new Array(1,2,3);//
      var arr2 = new Array(4);//这种方式，只有一个数字类型时，代表长度
@@ -348,7 +348,7 @@
      * join（参数）：将数组中的元素按照指定的分隔符拼接为字符串，默认是，拼接
      * push（）：向集合的尾部添加更多元素，并返回新的长度，类比于Java中集合的add（）方法
 
-     ```
+     ```javascript
      从www.w3school.com中查找array对象的所有方法
      //演示join方法
      document.write(arr.join(--)+</br>);//结果为：1--abc--true--hehe
@@ -371,7 +371,7 @@
      * JS中，数组元素的类型可变
      * JS中，数组的长度可变，类比于Java中的集合
 
-     ```
+     ```javascript
      结合代码演示 不同数组元素的类型
      var arr = [1,"abc",true];
      document.write(arr[0]+</br>);//1
@@ -409,7 +409,7 @@
     - getTime（）：获取毫秒值，返回当前时间到1970年1月1日零点的毫秒值之差
     - 其他方法浏览www.w3school.com中查询
 
-    ```
+    ```javascript
     	var date = new Date();
         document.write(date+"<br>");//Sun Apr 26 2020 09:39:55 GMT+0800 (中国标准时间)
         document.write(date.toLocaleString());//2020/4/26 上午9:39:55
@@ -433,7 +433,7 @@
     - floor（x）：对数进行下舍入
     - round（x）：四舍五入
 
-    ``` 
+    ``` javascript
     演示：
         document.write(Math.random()+"<br>");    //0.49898024456203083
         document.write(Math.PI+"<br>");          //3.141592653589793
@@ -444,7 +444,7 @@
 
     - 一个小练习：去1~100之间的随机数
 
-    ```
+    ```html
     思路：1.先取0~1之间的数，在乘以100，则取数为：0~99.99999 
     	 2.使用floor函数，使得小数化为整数
     	 3.在将取得的数加1，取数为1~100
@@ -499,7 +499,7 @@
   - var reg = new RegExp("正则表达式")；
   - var reg = /正则表达式/；    此时注意 不要加上双引号，否则就变成了字符串了（此种方式使用的更多）
 
-  ```
+  ```javascript
   演示：
      var reg1 = RegExp("^\\w{6,12}$"); //这里注意字符串中要用\\转义为\
      var reg2 = /^\w{6,12}$/;
@@ -511,7 +511,7 @@
 
   - test（）： 验证指定的字符串是否符合正则定义的规范
 
-  ```
+  ```javascript
   演示:
       var user = "zhangsan";
       var password = "asdfghjklqwerty"
@@ -554,7 +554,7 @@
   		  在与后者可以编码更多的字符
   ```
 
-  ```
+  ```javascript
   演示:
      var str = "长江大学";
      var encode = encodeURI(str);
@@ -598,7 +598,7 @@
   - 修改标签体内容：
     - 属性：innerHTML
 
-```
+```html
 演示
 <body>
 	<h1 id = "title">床前明月光</h1>
@@ -622,7 +622,7 @@
     - 事件：onclick — 单击事件
   - 通过js获取元素对象，指定事件属性，设置一个函数（降低耦合度，利于分工协作）
 
-```
+```html
 演示：
 <body>
 <img src="img/1.png" onclick="fun()">
@@ -658,7 +658,7 @@
   	2.使用flag来标记
 ```
 
-```
+```html
 演示：
 <body>
 
@@ -732,7 +732,7 @@
 
          - 返回值：获取用户输入的值
 
-         ```
+         ```html
          演示：
          <body>
          <script>
@@ -754,7 +754,7 @@
 
          - open()方法中可以添加url地址，此时可以打开到该url地址
 
-         ```
+         ```html
          演示
          <body>
          <input id="openBtn" type="button" value="打开窗口">
@@ -795,7 +795,7 @@
 
        - [clearInterval()](https://www.w3school.com.cn/jsref/met_win_clearinterval.asp)：取消由 setInterval() 设置的 timeout。
 
-         ```
+         ```html
          演示：
          <script>
              function fun() {
@@ -834,7 +834,7 @@
   - 定义一个定时器，目的是在一定时间内自动切换图片
 - 难点:控制图片src属性的正确切换
 
-```
+```html
 演示:
 <body>
 
@@ -879,7 +879,7 @@
   2. 实现秒数的倒计时：使用定时器
   3. 当时间为0时，跳转
 
-```
+```html
 演示
 <head>
  	<style>
@@ -979,7 +979,7 @@
        - getElementByClassName():根据class属性值获取元素对象，返回值是一个数组
        - getElementByName():根据class属性值获取元素对象，返回值是一个数组
 
-     ```
+     ```html
      演示：
      <body>
      
@@ -1008,7 +1008,7 @@
        - createElement()
        - createTextNode()
 
-     ```
+     ```html
      演示：
      <script>
         var table = document.createElement("table");
@@ -1027,7 +1027,7 @@
      - removeAttribute():删除属性
      - setAttribute():设置属性
 
-  ```
+  ```html
   演示：
   
   <body>
@@ -1066,7 +1066,7 @@
   3. 属性
      - parentNode：返回当前节点的父节点
 
-  ```
+  ```html
   演示：
   <head>
   	 <style>
@@ -1137,7 +1137,7 @@
 
   - 功能：设置和获取标签体
 
-    ```
+    ```html
     演示:
     
     <body>
@@ -1162,7 +1162,7 @@
 
   - 使用元素style属性设置
 
-  ```
+  ```html
   演示:
   
   <body>
@@ -1184,7 +1184,7 @@
 
   - 通过className属性来设置，相当于改变元素的class属性
 
-  ```
+  ```html
   演示：
   <head>
   	.d1{
@@ -1253,7 +1253,7 @@
 
 
 
-```
+```html
 素材：
 
 <!DOCTYPE html>
@@ -1318,7 +1318,7 @@
 </html>
 ```
 
-```
+```html
 案例演示：
 
 <!DOCTYPE html>
@@ -1498,7 +1498,7 @@
     - 一般给``<body>, <frame>, <frameset>, <iframe>, <img>, <link>, <script>``添加该事件
     - 可以给window对象添加事件
 
-  ```
+  ```html
   演示：
   <body>
   	//当页面加载完成后加载此事件
@@ -1528,7 +1528,7 @@
   - onmouseout:鼠标从某元素移开
   - onmouseover:鼠标移到某元素之上
 
-  ```
+  ```html
   演示：
   <body>
   	<input type="text" id="demo">
@@ -1550,7 +1550,7 @@
   - onkeyup：某个键盘按键被松开
   - onkeypress：某个键盘按键被按下并松开
 
-  ```
+  ```html
   演示：
   <body>
   	<input type="text" id="demo">
@@ -1571,7 +1571,7 @@
   - onchange：域的内容被改变（很多时候作用与下拉列表）
   - onselect：文本被选中
 
-  ```
+  ```html
   演示：
   <body>
   
@@ -1604,7 +1604,7 @@
     - 可以通过表单校验的方式，阻止表单的提交
   - onreset：表单被重置
 
-  ```
+  ```html
   演示：
   
   <body>								//必须要有return，否则不能得到返回值
@@ -1665,7 +1665,7 @@
 
   
 
-```
+```html
 演示：
 <!DOCTYPE html>
 <html lang="en">
@@ -1832,7 +1832,7 @@
     - 需要结合正则表达式进行判断
   - 给各个表单项绑定onblur事件
 
-  ```
+  ```html
   演示：
   <!DOCTYPE html>
   <html lang="en">
